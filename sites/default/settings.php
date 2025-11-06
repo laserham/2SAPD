@@ -912,6 +912,7 @@ $settings ['config_sync_directory'] = '../config/sync';
 
 // Automatically generated include for settings managed by ddev.
 $ddev_settings = __DIR__ . '/settings.ddev.php';
+$settings['config_sync_directory'] = 'config/sync';
 if (getenv('IS_DDEV_PROJECT') == 'true' && is_readable($ddev_settings)) {
 require $ddev_settings;
 }
