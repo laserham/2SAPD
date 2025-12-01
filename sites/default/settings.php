@@ -68,33 +68,24 @@
  * to multiple databases, including multiple types of databases,
  * during the same request.
  *
- * One example of the simplest connection array is shown below. To use the
- * sample settings, copy and uncomment the code below between the @code and
- * @endcode lines and paste it after the $databases declaration. You will need
- * to replace the database username and password and possibly the host and port
+ * One example of the simplest connection array is shown below. To use the * to replace the database username and password and possibly the host and port
  * with the appropriate credentials for your database system.
  *
  * The next section describes how to customize the $databases array for more
- * specific needs.
+ * specific needss
  *
  * @code
  * $databases['default']['default'] = [
- *   'database' => 'database_name',
- *   'username' => 'sql_username',
- *   'password' => 'sql_password',
- *   'host' => 'localhost',
- *   'port' => '3306',
- *   'driver' => 'mysql',
- *   'prefix' => '',
- *   'collation' => 'utf8mb4_general_ci',
- * ];
+  'driver'   => 'pgsql',
+  'database' => 'drupal',
+  'username' => 'drupaluser',
+  'password' => 'DrupalPass!2025',
+  'host'     => 'localhost',
+  'port'     => '5432',
+  'prefix'   => '',
+];
  * @endcode
- */
-$databases = [];
 
-/**
- * Customizing database settings.
- *
  * Many of the values of the $databases array can be customized for your
  * particular database system. Refer to the sample in the section above as a
  * starting point.
